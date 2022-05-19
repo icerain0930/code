@@ -1,18 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-//by icerain
-//zj a038
 int main(){
-ios_base::sync_with_stdio(0);
-cin.tie(0);
+ios_base::sync_with_stdio(0),cin.tie(0); // I/O??
 string s;
+int num=1;
 cin>>s;
-int n=s.length();
-int a[n];
-for(int i=n-1;i<=0;i--){
-	a[n-i]=s[n];
+int l=s.size();
+num=s[l-1]-48;
+for(int i=1;i<l;i++){
+	num=num*10+s[l-i-1]-48;
 }
-
+cout<<num;
 return 0;
 }
-
