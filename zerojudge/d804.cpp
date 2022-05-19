@@ -10,8 +10,8 @@ int a[n];
 for(int i=0;i<n;i++){
 	cin>>a[i]; 
 }
-sort(a,a+n,cmp);
-//由大排到小
+sort(a,a+n,cmp);//由大排到小
+
 for(int i=0;i<n;i++){
 	sum+=a[i];
 	t++;
