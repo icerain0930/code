@@ -2,9 +2,12 @@
 using namespace std;
 //by icerain
 int main(){
-ios_base::sync_with_stdio(0);
-cin.tie(0);
-cout<<"_xdddd"<<endl;
+int i;
+string a[i];
+cin>>a[i];
+sort(a,a+i);
+struct b{
+	
+};
 return 0;
 }
-

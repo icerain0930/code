@@ -4,7 +4,10 @@ using namespace std;
 int main(){
 ios_base::sync_with_stdio(0);
 cin.tie(0);
-cout<<"_xdddd"<<endl;
+long long a;
+while(cin>>a){
+	cout<<(a*a*a+5*a+6)/6<<endl;
+}
 return 0;
 }
 

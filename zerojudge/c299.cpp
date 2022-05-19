@@ -1,33 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-int n;
-cin>>n;
-int a[101],b[101];
-for(int i=0;i<n;i++){
-	cin>>a[i];
-}
-sort(a,a+n);
-int mi=a[0];
-int ma=a[n-1];
-bool test=true;
-int tmp=a[0];
-for(int j=1;j<n;j++){
-	if(a[j]==tmp+1){
-		tmp=a[j];
+    int n,i;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++){
+        cin>>a[i];
+    }
+    sort(a,a+n);
+    cout<<a[0]<<endl;
+    if(a[i]+1==a[i+1]){
+   		cout<<a[i]<<" "<<a[i+1]<<" "<<"yes\n";
 	}
-	else {
-		test=false;
-		break;
+	else{
+		cout<<a[i]<<" "<<a[i+1]<<" "<<"no\n";
 	}
+    
+    return 0;
+    
 }
 
-cout<<mi<<" "<<ma<<" ";
-if(test==true){
-	cout<<"yes\n";
-}
-else{
-	cout<<"no\n";
-}
-return 0;
-}
+

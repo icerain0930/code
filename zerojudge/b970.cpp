@@ -4,7 +4,11 @@ using namespace std;
 int main(){
 ios_base::sync_with_stdio(0);
 cin.tie(0);
-cout<<"_xdddd"<<endl;
+int n,i;
+cin>>n;
+for (i=1;i<=n;i++){
+	cout<<i<<". I don't say swear words!\n";
+} 
 return 0;
 }
 
