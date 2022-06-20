@@ -9,35 +9,35 @@ int main(){
 		char d,e,f;
 		cin>>d>>e>>f;
 		if(a==d&&b==e&&c==f){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else if(a==d&&b==f&&c==e){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else if(a==e&&b==d&&c==f){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else if(a==f&&b==d&&c==e){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else if(a==e&&b==f&&c==d){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else if(a==f&&b==e&&c==d){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else{
-			cout<<"¥¼¤¤¼ú"<<endl; 
+			cout<<"ã‚¼ã„ç¶¬"<<endl; 
 		}		
 	}
 	if(n==1){
 		char d,e,f;
 		cin>>d>>e>>f;
 		if(a==d&&b==e&&c==f){
-			cout<<"¤¤¼ú"<<endl; 
+			cout<<"ã„ç¶¬"<<endl; 
 		}
 		else{
-			cout<<"¥¼¤¤¼ú"<<endl; 
+			cout<<"ã‚¼ã„ç¶¬"<<endl; 
 		}
 	}	
-} 
+}  
