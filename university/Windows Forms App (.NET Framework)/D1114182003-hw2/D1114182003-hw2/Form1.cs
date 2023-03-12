@@ -32,6 +32,10 @@ namespace D1114182003_hw2
                 {
                     s = "體重過輕";
                 }
+                else if (c >= 18.5 && c < 24)
+                {
+                    s = "體重正常";
+                }
                 else if (c < 27 && c >= 24)
                 {
                     s = "體重過重";
@@ -43,13 +47,9 @@ namespace D1114182003_hw2
                 {
                     s = "中度肥胖";
                 }
-                else if (c <=35)
-                {
-                    s = "重度肥胖";
-                }
                 else
                 {
-                    s = "體重正常";
+                    s = "重度肥胖";
                 }
                 textBox1.Enabled = false;
                 textBox2.Enabled = false;
