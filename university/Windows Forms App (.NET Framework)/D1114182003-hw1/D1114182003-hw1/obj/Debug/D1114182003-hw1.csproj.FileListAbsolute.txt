@@ -1,0 +1,11 @@
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\bin\Debug\D1114182003-hw1.exe.config
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\bin\Debug\D1114182003-hw1.exe
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\bin\Debug\D1114182003-hw1.pdb
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003-hw1.csproj.AssemblyReference.cache
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003-hw1.csproj.SuggestedBindingRedirects.cache
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003_hw1.Form1.resources
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003_hw1.Properties.Resources.resources
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003-hw1.csproj.GenerateResource.cache
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003-hw1.csproj.CoreCompileInputs.cache
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003-hw1.exe
+C:\Users\88696\source\repos\D1114182003-hw1\D1114182003-hw1\obj\Debug\D1114182003-hw1.pdb
