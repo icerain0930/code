@@ -1,0 +1,4 @@
+document.querySelector("#sltKind2").selectedIndex=2
+document.querySelector("#title").value="大學生活 - Day102"
+document.querySelector("#new_tag").value="日常"
+document.querySelector("#All-ages").click()
