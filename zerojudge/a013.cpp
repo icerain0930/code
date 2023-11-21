@@ -1,79 +1,68 @@
 #include<bits/stdc++.h>
 using namespace std;
+//ZJ a013 
 //by icerain
-bool test;
-int main(){
-int s=0,s2=0;
-char a,b;
-
-awa:
-cin>>a>>b;
-if(a!='#'&&b!='#')test=true;
-else test=false;
-while(test=true){
-	switch(a){ //羅馬數字轉成啊拉伯數字 
-		case 'M':{
-			s=s+1000;
-			break;
+//M    CM  D   CD  C   XC L  XL X IX V IV I
+//1000 900 500 400 100 90 50 40 10 9 5  4 1
+string s;
+int rm2num(string s){
+    int sum = 0;
+    for(int i=0;i<s.size();i++){
+		if(s[i]=='M'){
+			sum+=1000;
 		}
-		case 'D':{
-			s=s+500;
-			break;
-		}  
-		case 'C':{
-			s=s+100;
-			break;
+		else if(s[i]=='D'){
+			sum+=500;
 		}
-		case 'L':{
-			s=s+50;
-			break;
+		else if(s[i]=='C'){
+			sum+=s[i+1]=='D' || s[i+1]=='M' ? -100 : 100;
 		}
-		case 'X':{
-			s=s+10;	
-			break;
-		}	
-		case 'V':{
-			s=s+5;		
-			break;
+		else if(s[i]=='L'){
+			sum+=50;
 		}
-		case 'I':{
-			s=s+1;	
-			break;
+		else if(s[i]=='X'){
+			sum+=s[i+1]=='C' || s[i+1]=='L' ? -10 : 10;
+		}
+		else if(s[i]=='V'){
+			sum+=5;
+		}
+		else{
+			sum+=s[i+1]=='X' || s[i+1]=='V' ? -1 : 1;
 		}
 	}
-	switch(b){ //羅馬數字轉成啊拉伯數字 
-		case 'M':{
-			s2=s2+1000;
-			break;
-		}
-		case 'D':{
-			s2=s2+500;
-			break;
-		}
-		case 'C':{
-			s2=s2+100;
-			break;
-		}
-		case 'L':{
-			s2=s2+50;
-			break;
-		}
-		case 'X':{
-			s2=s2+10;	
-			break;
-		}	
-		case 'V':{
-			s2=s2+5;		
-			break;
-		}
-		case 'I':{
-			s2=s2+1;	
-			break;
-		}
-	}
-	goto awa;	
+	return sum;
 }
-cout<<s<<" "<<s2;
+int num2rm(int a){
+	string str="";
+	int arr[13] = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+	string rm[13] = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+	int i=0;
+	while(a){	
+		while(arr[i]<=a){
+			a=a-arr[i];
+			str.append(rm[i]);
+		}
+		if(arr[i]>a)i++;
+	}
+	cout<<str<<endl;
+}
+int main(){
+cin>>s;
+while(s[0]!='#'){
+	int a=0,b=0,sum=0;
+	a = rm2num(s);
+	cin>>s;
+	b = rm2num(s);
+	//abs
+	a = abs(a-b);
+	if(a==0){
+		cout<<"ZERO\n";
+	}
+	else {
+		num2rm(a);
+	}
+	//
+	cin>>s;
+}
 return 0;
 }
-
